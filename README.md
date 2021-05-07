@@ -16,6 +16,24 @@ Run the test:
 cargo test
 ```
 
+Run code formatting:
+
+```
+cargo fmt
+```
+
+### Deps
+
+```
+rustup component add rustfmt
+```
+
+### VSCode
+
+Extensions:
+
+- https://github.com/rust-lang/vscode-rust
+
 ## Create release
 
 ```

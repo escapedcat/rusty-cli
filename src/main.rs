@@ -7,7 +7,7 @@ fn get_tx_info(tx: &str) -> String {
 fn main() {
     let args: Vec<String> = env::args().collect();
     let command = args[1].clone();
-   
+
     if command == "tx-info" {
         let tx = args[2].clone();
         println!("TX info: {}", get_tx_info(&tx.to_string()));
