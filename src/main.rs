@@ -4,7 +4,7 @@ fn get_tx_info(tx: &str) -> String {
     format!("{} append", &tx.to_string())
 }
 
-fn main() {
+            fn main() {
     let args: Vec<String> = env::args().collect();
     let command = args[1].clone();
 
