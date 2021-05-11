@@ -1,5 +1,6 @@
 use std::env;
 
+/// Get a tx info from a tx
 fn get_tx_info(tx: &str) -> String {
     format!("{} append", &tx.to_string())
 }
