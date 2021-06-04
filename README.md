@@ -51,3 +51,5 @@ Publish rust bin as npm package
 
 - https://blog.woubuc.be/post/publishing-rust-binary-on-npm
 - https://github.com/EverlastingBugstopper/binary-install
+
+test feat test
