@@ -1,4 +1,4 @@
 var searchIndex = JSON.parse('{\
-"rusty_cli":{"doc":"","i":[[5,"get_tx_info","rusty_cli","Get a tx info from a tx",null,[[["str",15]],["string",3]]],[5,"main","","",null,[[]]]],"p":[]}\
+"rusty_cli":{"doc":"","t":[5,5],"n":["get_tx_info","main"],"q":["rusty_cli",""],"d":["Get a tx info from a tx",""],"i":[0,0],"f":[[[["str",15]],["string",3]],[[]]],"p":[]}\
 }');
-addSearchOptions(searchIndex);initSearch(searchIndex);
+initSearch(searchIndex);
