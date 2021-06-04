@@ -40,6 +40,18 @@ Extensions:
 cargo build --release
 ```
 
+### Release
+
+```
+cargo release --no-dev-version [--dry-run]
+```
+
+#### Deps
+
+```
+cargo install cargo-release
+```
+
 # Resources used
 
 - https://www.youtube.com/watch?v=zF34dRivLOw
@@ -51,5 +63,3 @@ Publish rust bin as npm package
 
 - https://blog.woubuc.be/post/publishing-rust-binary-on-npm
 - https://github.com/EverlastingBugstopper/binary-install
-
-test feat test
