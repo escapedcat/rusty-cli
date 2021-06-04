@@ -1,23 +1,21 @@
-name: Convco
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-env:
-  CARGO_TERM_COLOR: always
+name: Pull request
+# This workflow is triggered on pushes to the repository.
+on: [pull_request]
 
 jobs:
-  build:
+  check:
+    name: Check
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
+        with:
+          # A PR should not contain too many commits
+          fetch-depth: 50
+
       - name: Validate commit messages
         run: |
           git show-ref
           curl -sSfL https://github.com/convco/convco/releases/latest/download/convco-ubuntu.zip | zcat > convco
           chmod +x convco
           ./convco check ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
+          rm convco
