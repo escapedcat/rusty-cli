@@ -10,6 +10,10 @@ Run the CLI:
 cargo run tx-info 45234e45364d5316r14354456344563445642354432
 ```
 
+```
+cargo run set-pw
+```
+
 Run the test:
 
 ```

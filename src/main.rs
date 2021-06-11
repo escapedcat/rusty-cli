@@ -1,4 +1,5 @@
 use std::env;
+extern crate rpassword;
 
 /// Get a tx info from a tx
 fn get_tx_info(tx: &str) -> String {
@@ -12,6 +13,11 @@ fn main() {
     if command == "tx-info" {
         let tx = args[2].clone();
         println!("TX info: {}", get_tx_info(&tx.to_string()));
+    }
+
+    if command == "set-pw" {
+        let pass = rpassword::prompt_password_stdout("Password: ").unwrap();
+        println!("Your password is {}", pass);
     }
 }
 
