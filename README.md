@@ -26,6 +26,12 @@ Run code formatting:
 cargo fmt
 ```
 
+### Code linting
+
+```
+cargo clippy
+```
+
 ### Deps
 
 ```
