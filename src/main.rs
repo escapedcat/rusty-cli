@@ -6,6 +6,7 @@ fn get_tx_info(tx: &str) -> String {
     format!("{} append", &tx.to_string())
 }
 
+#[allow(clippy::redundant_clone)]
 fn main() {
     let args: Vec<String> = env::args().collect();
     let command = args[1].clone();
